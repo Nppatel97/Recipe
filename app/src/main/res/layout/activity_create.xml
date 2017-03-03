@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.phase3.recipe.Create">
+
+    <TextView
+        android:text="@string/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/create_header"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="@string/create_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/email_prompt"
+        android:layout_below="@+id/create_header"
+        android:layout_alignLeft="@+id/create_header"
+        android:layout_alignStart="@+id/create_header" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/email_prompt"
+        android:layout_alignLeft="@+id/email_prompt"
+        android:layout_alignStart="@+id/email_prompt"
+        android:layout_marginTop="11dp"
+        android:id="@+id/enter_email" />
+
+    <TextView
+        android:text="@string/create_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_prompt"
+        android:layout_below="@+id/enter_email"
+        android:layout_alignLeft="@+id/enter_email"
+        android:layout_alignStart="@+id/enter_email"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/pass_prompt"
+        android:layout_alignLeft="@+id/pass_prompt"
+        android:layout_alignStart="@+id/pass_prompt"
+        android:layout_marginTop="11dp"
+        android:id="@+id/enter_pass" />
+
+    <TextView
+        android:text="@string/re_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/pass_check"
+        android:layout_below="@+id/enter_pass"
+        android:layout_alignLeft="@+id/enter_pass"
+        android:layout_alignStart="@+id/enter_pass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/check_pass"
+        android:layout_below="@+id/pass_check"
+        android:layout_alignLeft="@+id/pass_check"
+        android:layout_alignStart="@+id/pass_check"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="@string/have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/user_exists"
+        android:layout_below="@+id/bt_reg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/Sign_In"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:id="@+id/bt_return_start"
+        android:textSize="12sp"
+        android:layout_below="@+id/user_exists"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/bt_reg"
+        android:layout_below="@+id/check_pass"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_pass"
+        android:layout_alignLeft="@+id/check_pass"
+        android:layout_alignStart="@+id/check_pass"
+        android:layout_marginTop="10dp"
+        android:id="@+id/create_success" />
+
+</RelativeLayout>
