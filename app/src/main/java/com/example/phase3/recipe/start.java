@@ -26,7 +26,7 @@ public class start extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         bt_create = (Button)findViewById(R.id.bt_create);
-
+        bt_singIn = (Button) findViewById(R.id.bt_signIn);
         bt_create.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -52,8 +52,9 @@ public class start extends AppCompatActivity {
                 String email = String.valueOf(email_add.getText());
                 String pass = String.valueOf(pass_word.getText());
 
-                if(email.equals("bob@gmail.com")&& pass.equals("bob123")){
-                    setContentView(R.layout.activity_main_menu);
+                if(email.equals("alan@gmail.com")&& pass.equals("alan123")){
+                    Intent intent1 = new Intent(start.this, MainActivity.class);
+                    startActivity(intent1);
                 }else{
                     tv_Error.setText("Incorrect email or password");
                 }

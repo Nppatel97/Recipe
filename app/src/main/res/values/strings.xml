@@ -19,15 +19,52 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="userProf">user Profile</string>
+    <string name="userProf">User Profile</string>
     <string name="rec">Recipes</string>
     <string name="saved">Saved Recipes</string>
     <string name="plan">7 Day Planner</string>
     <string name="track">Health Tracker </string>
     <string name="Group">Group Meal Planner</string>
     <string name="Help">Help and Support</string>
-    <string name="logout">Are you sure you want to log out?</string>
+    <string name="logout">Log Out</string>
+    <string name="out_prompt">Are you sure you want to log out?</string>
     <string name="title_activity_main_menu">MainMenu</string>
 
 
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+
+
+    <string name="textview">TextView</string>
+    <string name="userprofile">userProfile</string>
+    <string name="alancooper_domain_com">alanCooper@domain.com</string>
+    <string name="update_info">Update Info</string>
+    <string name="_12_4_1991">12/4/1991</string>
+    <string name="_172_cm">172 cm</string>
+    <string name="_67_kg">67 Kg</string>
+    <string name="alan_cooper">Alan Cooper</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="dietry_restrictions">Dietry Restrictions</string>
+    <string name="eggs">Eggs</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="milk">Milk</string>
+    <string name="peanuts">Peanuts</string>
+    <string name="serves">Serves</string>
+    <string name="vegan">Vegan</string>
+    <string name="weight">Weight</string>
+    <string name="profile">Profile</string>
+    <string-array name="serves_list">
+        <item>1 Person</item>
+        <item>2 to 4 People</item>
+        <item>5 to 8 People</item>
+        <item>8 or more People</item>
+    </string-array>
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Rather not say</item>
+    </string-array>
 </resources>
