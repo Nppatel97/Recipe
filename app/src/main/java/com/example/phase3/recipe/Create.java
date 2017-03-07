@@ -41,6 +41,19 @@ public class Create extends AppCompatActivity {
         check_pass = (EditText) findViewById(R.id.check_pass);
         create_success = (TextView) findViewById(R.id.create_success);
 
+        bt_reg.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String pass1 = String.valueOf(enter_pass.getText());
+                String pass2 = String.valueOf(check_pass.getText());
+
+                if(pass1.equals(pass2)){
+                    create_success.setText("Account created, press sign in to log in");
+                }else{
+                    create_success.setText("Passwords do not match");
+                }
+            }
+        });
 
 
     }

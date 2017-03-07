@@ -9,21 +9,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class user_prof extends AppCompatActivity {
-    Button bt_update;
+public class specific1 extends AppCompatActivity {
+
+    private Button button4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_prof);
+        setContentView(R.layout.activity_specific1);
 
-        bt_update = (Button)findViewById(R.id.bt_update);
+        button4 = (Button)findViewById(R.id.button4);
 
-        bt_update.setOnClickListener(new View.OnClickListener() {
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(user_prof.this, "Info Updated", Toast.LENGTH_SHORT).show();
+                Toast.makeText(specific1.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     @Override
@@ -67,10 +70,7 @@ public class user_prof extends AppCompatActivity {
             Intent leave = new Intent(this,logout.class);
             startActivity(leave);
             return(true);
-
-
     }
         return(super.onOptionsItemSelected(item));
     }
-
 }

@@ -41,6 +41,10 @@
             android:name=".help"
             android:label="@string/Help" />
         <activity android:name=".logout" />
+        <activity
+            android:name=".specific1"
+            android:label="Recipe">
+        </activity>
     </application>
 
 </manifest>
