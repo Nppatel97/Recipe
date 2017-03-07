@@ -23,6 +23,8 @@ public class Create extends AppCompatActivity {
         setContentView(R.layout.activity_create);
 
         bt_return_start = (Button)findViewById(R.id.bt_return_start);
+        bt_reg = (Button)findViewById(R.id.bt_reg);
+
         bt_return_start.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -34,5 +36,12 @@ public class Create extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        enter_pass = (EditText) findViewById(R.id.enter_pass);
+        check_pass = (EditText) findViewById(R.id.check_pass);
+        create_success = (TextView) findViewById(R.id.create_success);
+
+
+
     }
 }

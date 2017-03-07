@@ -19,21 +19,28 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" />
-        <activity android:name=".user_prof"
-            android:label = "@string/userProf"/>
-        <activity android:name=".recipes"
-            android:label = "@string/rec"/>
-        <activity android:name=".saved_rec"
-            android:label = "@string/saved"/>
-        <activity android:name=".seven_plan"
-            android:label="@string/plan"/>
-        <activity android:name=".track"
-            android:label="@string/track"/>
-        <activity android:name=".group"
-            android:label="@string/Group"/>
-        <activity android:name=".help"
-            android:label="@string/Help"/>
-        <activity android:name=".logout"></activity>
+        <activity
+            android:name=".user_prof"
+            android:label="@string/userProf" />
+        <activity
+            android:name=".recipes"
+            android:label="@string/rec" />
+        <activity
+            android:name=".saved_rec"
+            android:label="@string/saved" />
+        <activity
+            android:name=".seven_plan"
+            android:label="@string/plan" />
+        <activity
+            android:name=".track"
+            android:label="@string/track" />
+        <activity
+            android:name=".group"
+            android:label="@string/Group" />
+        <activity
+            android:name=".help"
+            android:label="@string/Help" />
+        <activity android:name=".logout" />
     </application>
 
 </manifest>
