@@ -53,7 +53,7 @@ public class start extends AppCompatActivity {
                 String pass = String.valueOf(pass_word.getText());
 
                 if(email.equals("alan@gmail.com")&& pass.equals("alan123")){
-                    Intent intent1 = new Intent(start.this, saved_rec.class);
+                    Intent intent1 = new Intent(start.this, user_prof.class);
                     startActivity(intent1);
                 }else{
                     tv_Error.setText("Incorrect email or password");
