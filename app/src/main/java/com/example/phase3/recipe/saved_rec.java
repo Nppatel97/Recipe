@@ -5,13 +5,39 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
 
 public class saved_rec extends AppCompatActivity {
+    ListView lv;
+    SearchView sv;
+    String [] recipes = {"Garlic Chicken","Penne with Spring Vegetables"};
+    ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_rec);
+
+        lv = (ListView) findViewById(R.id.lv1);
+        sv = (SearchView)findViewById(R.id.srch1);
+
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,recipes);
+        lv.setAdapter(adapter);
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String text) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String text) {
+                adapter.getFilter().filter(text);
+                return false;
+            }
+        });
+
     }
 
     @Override
