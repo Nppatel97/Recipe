@@ -77,4 +77,16 @@
         <item>Female</item>
         <item>Rather not say</item>
     </string-array>
+
+    <string-array name="nutrients">
+        <item>Protein Intake - Medium</item>
+        <item>Carbs Intake - Low</item>
+        <item>Sodium Intake - Low</item>
+        <item>Vitamin A Intake - Medium</item>
+        <item>Vitamin C Intake - High</item>
+        <item>Vitamin D Intake - Low</item>
+        <item>Fats Intake - High</item>
+        <item>Saturated Fats Intake - Medium</item>
+        <item>Potassium Intake - Medium</item>
+    </string-array>
 </resources>
