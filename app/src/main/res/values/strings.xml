@@ -12,12 +12,14 @@
     <string name="reg">Register</string>
     <string name="have_account">Already have an Account?</string>
     <string name="title_activity_login">login</string>
+    <string name="reset">Reset Password</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="retrieve">Retrieve Password</string>
 
     <string name="userProf">User Profile</string>
     <string name="rec">Recipes</string>
@@ -44,7 +46,7 @@
     <string name="_67_kg">67 Kg</string>
     <string name="alan_cooper">Alan Cooper</string>
     <string name="birthdate">Birthdate</string>
-    <string name="dietry_restrictions">Dietry Restrictions</string>
+    <string name="dietry_restrictions">Dietary Restrictions</string>
     <string name="eggs">Eggs</string>
     <string name="gender">Gender</string>
     <string name="height">Height</string>
@@ -54,6 +56,16 @@
     <string name="vegan">Vegan</string>
     <string name="weight">Weight</string>
     <string name="profile">Profile</string>
+
+
+    <string name="follow">Experiencing problems with th app? You may find these FAQs pretty useful. Just follow the link below</string>
+    <string name="site">http://www.recipefinder.com/FAQs/</string>
+    <string name="exp">We would love to hear from you! Please share your experience with us your at</string>
+    <string name="feedback">recipefinder@seng310phase3.com</string>
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="response">Your Feedback Matters</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="socail">Follow us on Social Media and get the latest updates before anyone else!</string>
     <string-array name="serves_list">
         <item>1 Person</item>
         <item>2 to 4 People</item>

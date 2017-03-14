@@ -19,7 +19,7 @@ public class start extends AppCompatActivity {
     private Button bt_singIn;
     private Button bt_create;
     private TextView tv_Error;
-
+    private TextView textView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,19 @@ public class start extends AppCompatActivity {
                 }
             }
         });
+
+        TextView textView2 = (TextView)findViewById(R.id.textView2);
+
+        textView2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent ret = new Intent(start.this, forgot.class);
+                    startActivity(ret);
+
+            }
+        });
+
+
     }
 
 }

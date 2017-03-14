@@ -6,56 +6,26 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.SearchView;
+import android.widget.Button;
+import android.widget.Toast;
 
-public class saved_rec extends AppCompatActivity {
-    ListView lv;
-    SearchView sv;
-    String [] recipes = {"Garlic Chicken","Penne with Spring Vegetables"};
-    ArrayAdapter<String> adapter;
+public class specific2 extends AppCompatActivity {
+
+    private Button bt_select;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saved_rec);
+        setContentView(R.layout.activity_specific2);
 
-        lv = (ListView) findViewById(R.id.lv1);
-        sv = (SearchView)findViewById(R.id.srch1);
+        bt_select = (Button)findViewById(R.id.bt_select);
 
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,recipes);
-        lv.setAdapter(adapter);
-        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        bt_select.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextSubmit(String text) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String text) {
-                adapter.getFilter().filter(text);
-                return false;
+            public void onClick(View v) {
+                Toast.makeText(specific2.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
             }
         });
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch(position){
-                    case 0:
-                        Intent first_pick = new Intent(saved_rec.this,specific1.class);
-                        startActivity(first_pick);
-                        break;
-                    case 1:
-                        Intent sec_pick = new Intent(saved_rec.this,specific2.class);
-                        startActivity(sec_pick);
-                        break;
-                }
-            }
-        });
-
     }
 
     @Override
@@ -64,6 +34,7 @@ public class saved_rec extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
@@ -99,8 +70,6 @@ public class saved_rec extends AppCompatActivity {
             Intent leave = new Intent(this,logout.class);
             startActivity(leave);
             return(true);
-
-
     }
         return(super.onOptionsItemSelected(item));
     }
