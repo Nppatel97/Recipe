@@ -5,14 +5,49 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.view.View;
+import android.widget.AdapterView;
+
 
 public class track extends AppCompatActivity {
+
+    private Spinner spinner4;
+    private ImageView imageview5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track);
+
+        spinner4 = (Spinner) findViewById(R.id.spinner4);
+        imageview5 = (ImageView)findViewById(R.id.imageView5);
+
+        spinner4.setOnItemSelectedListener(
+                new AdapterView.OnItemSelectedListener() {
+                    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                        int position = spinner4.getSelectedItemPosition ();
+                        switch (position) {
+                            case 2:
+                                imageview5.setImageResource(R.drawable.sodium);
+                                break;
+                            case 3:
+                                imageview5.setImageResource(R.drawable.sva);
+                                break;
+                            case 6:
+                                imageview5.setImageResource(R.drawable.fats);
+
+                        }
+
+                    }
+                    public void onNothingSelected(AdapterView<?> parent) {
+                    }
+                });
+
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

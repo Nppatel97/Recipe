@@ -301,6 +301,29 @@ public class display extends AppCompatActivity {
             i++;
         }
 
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent i1 = new Intent(display.this, blt.class);
+                startActivity(i1);
+
+            }
+        });
+
+
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent i2 = new Intent(display.this, curry.class);
+                startActivity(i2);
+
+            }
+        });
+
 
 
 

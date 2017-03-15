@@ -8,15 +8,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import java.util.Arrays;
 
-public class specific1 extends AppCompatActivity {
+public class blt extends AppCompatActivity {
 
     private Button button4;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_specific1);
+        setContentView(R.layout.activity_blt);
 
         button4 = (Button)findViewById(R.id.button4);
 
@@ -24,11 +25,11 @@ public class specific1 extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(specific1.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
+                Toast.makeText(blt.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

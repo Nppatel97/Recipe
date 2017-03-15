@@ -46,7 +46,9 @@
             android:label="Recipe" />
         <activity android:name=".specific2" />
         <activity android:name=".forgot" />
-        <activity android:name=".display"></activity>
+        <activity android:name=".display" />
+        <activity android:name=".blt" />
+        <activity android:name=".curry"></activity>
     </application>
 
 </manifest>

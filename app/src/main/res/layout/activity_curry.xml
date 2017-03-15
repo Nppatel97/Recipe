@@ -24,20 +24,20 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="18dp"
-                android:text="Penne with Spring Vegetables"
+                android:text="Curry Chicken"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView10"
                 android:layout_marginTop="12dp"
-                app:srcCompat="@drawable/recipe_img2"
+                app:srcCompat="@drawable/curry"
                 tools:ignore="ContentDescription" />
 
             <LinearLayout
@@ -147,7 +147,7 @@
                         android:layout_alignStart="@+id/checkBox8"
                         android:layout_below="@+id/checkBox8"
                         android:layout_weight="1"
-                        android:text="1 pound fresh asparagus" />
+                        android:text="1/8 cup of butter" />
 
                     <CheckBox
                         android:id="@+id/checkBox5"
@@ -157,7 +157,7 @@
                         android:layout_alignStart="@+id/ratingBar"
                         android:layout_below="@+id/textView11"
                         android:layout_weight="1"
-                        android:text="1 (8 ounce) peas" />
+                        android:text="1/4 cup honey" />
 
                     <CheckBox
                         android:id="@+id/checkBox8"
@@ -167,7 +167,7 @@
                         android:layout_alignStart="@+id/checkBox5"
                         android:layout_below="@+id/checkBox5"
                         android:layout_weight="1"
-                        android:text="salt and pepper to taste" />
+                        android:text="1 tsp curry powder" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -183,7 +183,7 @@
                         android:layout_alignLeft="@+id/checkBox6"
                         android:layout_alignStart="@+id/checkBox6"
                         android:layout_below="@+id/checkBox6"
-                        android:text="3 tbsp. olive oil" />
+                        android:text="1⁄8 cup Dijon mustard" />
 
                     <CheckBox
                         android:id="@+id/checkBox6"
@@ -192,14 +192,7 @@
                         android:layout_above="@+id/checkBox8"
                         android:layout_alignLeft="@+id/textView12"
                         android:layout_alignStart="@+id/textView12"
-                        android:text="1/2 cup grated Parmesan" />
-
-                    <CheckBox
-                        android:id="@+id/checkBox13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.00"
-                        android:text="1 (8 ounce) package dry penne pasta" />
+                        android:text="2-3 bonless skinless chicken breasts" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -224,8 +217,8 @@
                 android:layout_alignLeft="@+id/textView17"
                 android:layout_alignStart="@+id/textView17"
                 android:layout_below="@+id/textView17"
+                android:text="Cooks in 50 minutes"
                 android:layout_marginLeft="15dp"
-                android:text="Cooks in 25 minutes"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -237,7 +230,7 @@
                 android:layout_alignRight="@+id/checkBox9"
                 android:layout_below="@+id/textView18"
                 android:layout_marginTop="11dp"
-                android:text="Bring a large pot of lightly salted water to a boil. Add asparagus, and cook for 2 minutes. Add peas, and cook for 2 more minutes."
+                android:text="Preheat oven to 350."
                 android:textSize="18sp" />
 
             <CheckBox
@@ -248,7 +241,7 @@
                 android:layout_alignStart="@+id/checkBox10"
                 android:layout_below="@+id/checkBox10"
                 android:layout_marginTop="13dp"
-                android:text="Transfer to a large bowl; set aside. Add pasta to boiling water, and cook for 8 to 10 minutes or until al dente; drain."
+                android:text="Heat butter, honey, dijon mustard, and curry together in a pan. "
                 android:textSize="18sp" />
 
             <CheckBox
@@ -261,8 +254,22 @@
                 android:layout_alignStart="@+id/checkBox11"
                 android:layout_below="@+id/checkBox11"
                 android:layout_marginTop="17dp"
-                android:text="Place pasta in the bowl with asparagus and peas. Toss with olive oil, Parmesan, salt and pepper."
+                android:text="Place chicken in a dish and pour sauce over chicken."
                 android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/checkBox11"
+                android:layout_alignLeft="@+id/checkBox11"
+                android:layout_alignRight="@+id/checkBox11"
+                android:layout_alignStart="@+id/checkBox11"
+                android:layout_below="@+id/checkBox11"
+                android:layout_marginTop="17dp"
+                android:text="Bake for 50-55 mins."
+                android:textSize="18sp" />
+
 
             <TextView
                 android:id="@+id/textView27"
@@ -285,7 +292,7 @@
                 android:layout_alignStart="@+id/checkBox12"
                 android:layout_below="@+id/textView27"
                 android:layout_marginTop="13dp"
-                android:text="Total Calories: 383 kcal"
+                android:text="Total Calories: 770 kcal"
                 android:layout_marginLeft="15dp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -299,7 +306,7 @@
                 android:layout_below="@+id/textView30"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="13dp"
-                android:text="Sodium: 158 mg"
+                android:text="Sodium: 836 mg"
                 android:textSize="18sp" />
 
             <TextView
@@ -313,7 +320,7 @@
                 android:layout_below="@+id/textView33"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="11dp"
-                android:text="Protein: 15.2 g"
+                android:text="Protein: 52.8 g"
                 android:textSize="18sp" />
 
             <TextView
@@ -325,7 +332,7 @@
                 android:layout_below="@+id/textView32"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="12dp"
-                android:text="Fat: 14.4 g"
+                android:text="Fat: 31.2 g"
                 android:textSize="18sp" />
 
             <TextView
@@ -337,7 +344,7 @@
                 android:layout_below="@+id/textView31"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="12dp"
-                android:text="Cholestrol: 9 mg"
+                android:text="Cholestrol: 212.2 mg"
                 android:textSize="18sp" />
 
             <TextView
@@ -351,11 +358,11 @@
                 android:layout_below="@+id/textView28"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="11dp"
-                android:text="Carbs: 50.4 g"
+                android:text="Carbs: 75.5 g"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/bt_select"
+                android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/spinner3"

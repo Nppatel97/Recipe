@@ -9,25 +9,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class specific1 extends AppCompatActivity {
+public class curry extends AppCompatActivity {
 
     private Button button4;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_specific1);
+        setContentView(R.layout.activity_curry);
 
         button4 = (Button)findViewById(R.id.button4);
-
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(specific1.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
+                Toast.makeText(curry.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     @Override

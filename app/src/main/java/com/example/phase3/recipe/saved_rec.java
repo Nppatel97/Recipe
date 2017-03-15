@@ -11,11 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
+import java.util.Arrays;
+
 public class saved_rec extends AppCompatActivity {
     ListView lv;
     SearchView sv;
-    String [] recipes = {"Garlic Chicken","Penne with Spring Vegetables"};
-    ArrayAdapter<String> adapter;
+    static String [] recipes = {"Garlic Chicken","Penne with Spring Vegetables","Curry Chicken"};
+    static ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +54,16 @@ public class saved_rec extends AppCompatActivity {
                         Intent sec_pick = new Intent(saved_rec.this,specific2.class);
                         startActivity(sec_pick);
                         break;
+                    case 2:
+                        Intent third_pick = new Intent(saved_rec.this,curry.class);
+                        startActivity(third_pick);
+                        break;
                 }
             }
         });
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

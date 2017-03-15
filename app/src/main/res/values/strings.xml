@@ -12,7 +12,7 @@
     <string name="reg">Register</string>
     <string name="have_account">Already have an Account?</string>
     <string name="title_activity_login">login</string>
-    <string name="reset">Reset Password</string>
+    <string name="reset">Recover Password</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -66,6 +66,14 @@
     <string name="response">Your Feedback Matters</string>
     <string name="follow_us">Follow Us</string>
     <string name="socail">Follow us on Social Media and get the latest updates before anyone else!</string>
+    <string name="summary">Summary</string>
+    <string name="essentail">Check out how much and which essential nutrients your body took in last 2 weeks.</string>
+    <string name="budget">Budget</string>
+    <string name="max">max</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="dollar">$</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="calories">Calories</string>
     <string-array name="serves_list">
         <item>1 Person</item>
         <item>2 to 4 People</item>

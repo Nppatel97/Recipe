@@ -27,13 +27,14 @@
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
+                tools:ignore = "ContentDescription"
                 app:srcCompat="@drawable/graph" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Summary"
+                android:text="@string/summary"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textAlignment="center" />
@@ -42,7 +43,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Check out how much and which essential nutrients  your body took in last 2 weeks. "
+                android:text="@string/essentail"
                 android:textAlignment="center"
                 android:textSize="14sp" />
 
