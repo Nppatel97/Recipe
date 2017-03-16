@@ -12,17 +12,49 @@ import android.widget.Toast;
 public class curry extends AppCompatActivity {
 
     private Button button4;
+    private Button button2;
+    private Button button3;
+    int i = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_curry);
 
         button4 = (Button)findViewById(R.id.button4);
+        button2 = (Button)findViewById(R.id.button2);
+        button3 = (Button)findViewById(R.id.button3);
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(curry.this, "Recipe added to Health Tracker", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(i==0){
+                    button2.setBackgroundResource(R.drawable.liked);
+                    i++;
+                }else if(i==1){
+                    button2.setBackgroundResource(R.drawable.thumbs_up);
+                    i--;
+                }
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(i==0){
+                    button3.setBackgroundResource(R.drawable.dislike);
+                    i++;
+                }else if(i==1){
+                    button3.setBackgroundResource(R.drawable.thumbs_up);
+                    i--;
+                }
             }
         });
     }

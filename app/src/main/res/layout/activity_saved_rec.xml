@@ -26,4 +26,13 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/srch1" />
+
+    <Button
+        android:text="@string/a_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button10"
+        android:layout_above="@+id/lv1" />
 </RelativeLayout>

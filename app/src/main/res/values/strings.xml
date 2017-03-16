@@ -74,6 +74,7 @@
     <string name="dollar">$</string>
     <string name="ethnicity">Ethnicity</string>
     <string name="calories">Calories</string>
+    <string name="a_z">A-Z</string>
     <string-array name="serves_list">
         <item>1 Person</item>
         <item>2 to 4 People</item>
