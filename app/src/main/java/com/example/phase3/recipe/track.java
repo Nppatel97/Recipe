@@ -29,6 +29,9 @@ public class track extends AppCompatActivity {
                     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
                         int position = spinner4.getSelectedItemPosition ();
                         switch (position) {
+                            case 0:
+                                imageview5.setImageResource(R.drawable.graph);
+                                break;
                             case 2:
                                 imageview5.setImageResource(R.drawable.sodium);
                                 break;

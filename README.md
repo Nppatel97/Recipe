@@ -24,7 +24,8 @@ Run on emulator:
 * Choose the x86 image button and select Jelly Bean, with API Level 16 and press next. (you may need to download it).
 * Press finish.  
 * You should now see the virtual device you just created in the select deployment area.  
-* Select it and press ok.  
+* Select it and press ok. 
+* When the emulator starts, you may need to unlock the screen of the virtual device, and the application will be launched a couple of moments later.aa
 
 The emulator may take a couple of minutes to start when first running the app. If the app is slow or laggy, it is due to the emulator and debugger running.  
 
@@ -38,9 +39,10 @@ Things to take notice of when using this prototype
 -----------
 * Search function on display recipes doesn’t work
 * While this prototype includes the names of many recipes. We only have have 4 specific recipes that we coded pages for.
+* When searching for recipes, choose any for ethnicity and any for difficulty. For calories put 500, for price and time put 50. When the results are displayed, sort them from A to Z (A-Z button). Only the first two buttons are programmed. This is to insure that you get taken to the right recipe. You can search for other recipes based on ethnicity, time or any other factors. And all of the sorting options work as well. 
 * Like and dislike buttons which add a recipe or remove it from your saved recipes only work for the chicken curry recipe. We didn’t code every like and dislike button for the other recipes.
 * When using the search function in the saved recipes page,to make sure that clicking the recipe will take you that recipes’ page, use the list when it is not filtered by the search. As the search bar will filter the recipes list, changing their position, which may take you to a wrong recipe.
-
+* In the health tracker page, the graphs are not render in real time. Also the only options from the drop menu that will have a graph displayed are protein intake, sodium intake, Vitamin A intake, and fats intake. 
 
 
 
