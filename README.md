@@ -11,6 +11,6 @@ You have two choices on how to run the application. You can either use an emulat
 The application will run faster and smoother on an android device than on an emulator.
 
 Run on android device:  
-*Connect your device to your computer with a USB cable.
-*Enable USB debugging on your device by going to Settings > Developer options.
+* Connect your device to your computer with a USB cable.
+* Enable USB debugging on your device by going to Settings > Developer options.
 Note: On Android 4.2 and newer, Developer options is hidden by default. To make it visible go to Settings > About phone and tap Build number seven times. Return to the previous screen to find Developer options.
