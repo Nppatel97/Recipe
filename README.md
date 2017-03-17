@@ -11,4 +11,4 @@ You have two choices on how to run the application. You can either use an emulat
 The application will run faster and smoother on an android device than on an emulator.  
 
 Run on Android device
-——
+—--
