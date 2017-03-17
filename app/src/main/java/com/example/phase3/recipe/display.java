@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import java.lang.String;
 import java.util.Arrays;
+import android.widget.SearchView;
 
 public class display extends AppCompatActivity {
 
@@ -204,8 +205,6 @@ public class display extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
         Button order = (Button) findViewById(R.id.button7);
-
-
 
         /*Create recipes & add them to list*/
         Recipe MacandCheese = new Recipe("Mac & Cheese", "North American", 500, 15, 20, "Easy", 1, 3);
