@@ -34,6 +34,14 @@ To login to the application use the following credentials:
 * Email: alan@gmail.com  
 * Password: alan123  
 
+Things to take notice of when using this prototype
+-----------
+* Search function on display recipes doesn’t work
+* While this prototype includes the names of many recipes. We only have have 4 specific recipes that we coded pages for.
+* Like and dislike buttons which add a recipe or remove it from your saved recipes only work for the chicken curry recipe. We didn’t code every like and dislike button for the other recipes.
+* When using the search function in the saved recipes page,to make sure that clicking the recipe will take you that recipes’ page, use the list when it is not filtered by the search. As the search bar will filter the recipes list, changing their position, which may take you to a wrong recipe.
+
+
 
 
 
