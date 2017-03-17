@@ -1,11 +1,5 @@
 Recipe Provider Android Application Prototype
 ==========
-Contributors
------------
-Michelle Aleman
-Eric Bains
-Mohamed Ghannam
-Nisarg Patel
 
 How to get the code?
 -----------
@@ -13,3 +7,5 @@ You can clone the repository or download it as a zip file. You should then have 
 
 How to run the code?
 -----------
+You have two choices on how to run the application. You can either use an emulator, or if you have an android device, you can run the application on it.  
+The application will run faster and smoother on an android device than on an emulator.
