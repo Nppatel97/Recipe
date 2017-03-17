@@ -25,7 +25,15 @@ Run on emulator:
 * Press finish.  
 * You should now see the virtual device you just created in the select deployment area.  
 * Select it and press ok.  
+
 The emulator may take a couple of minutes to start when first running the app. If the app is slow or laggy, it is due to the emulator and debugger running.  
+
+Login Information
+-----------
+To login to the application use the following credentials:  
+* Email: alan@gmail.com  
+* Password: alan123  
+
 
 
 
