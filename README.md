@@ -12,5 +12,11 @@ The application will run faster and smoother on an android device than on an emu
 
 Run on android device:  
 * Connect your device to your computer with a USB cable.
-* Enable USB debugging on your device by going to Settings > Developer options.
-Note: On Android 4.2 and newer, Developer options is hidden by default. To make it visible go to Settings > About phone and tap Build number seven times. Return to the previous screen to find Developer options.
+* Enable USB debugging on your device by going to Settings > Developer options.  
+Note: On Android 4.2 and newer, Developer options is hidden by default. To make it visible go to Settings > About phone and tap Build number seven times. Return to the previous screen and you will find Developer options.
+* In Android Studio, click the app module in the Project window and then select Run > Run or click Run button in the tool bar(a button with a green rectangle).
+* In the select deployment area, choose your device, and press ok.  
+
+Run on emulator:
+
+
