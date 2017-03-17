@@ -21,10 +21,10 @@ Run on emulator:
 * Click Run button in the tool bar and you will be asked to choose a virtual device. If you don’t have one set up, you will need to create one.  
 * In the select deployment, select the “Create New Virtual Device” button.  
 * In category select phone,choose the Nexus 5, and press next.  
-* Choose the x86 image button and select Jelly Bean, with API Level 16 and press next. (you may need to download it).  
-*Press finish.  
-*You should now see the virtual device you just created in the select deployment area.  
-*Select it and press ok.  
+* Choose the x86 image button and select Jelly Bean, with API Level 16 and press next. (you may need to download it).
+* Press finish.  
+* You should now see the virtual device you just created in the select deployment area.  
+* Select it and press ok.  
 The emulator may take a couple of minutes to start when first running the app.  
 
 
