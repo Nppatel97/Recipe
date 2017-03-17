@@ -15,6 +15,7 @@ public class specific2 extends AppCompatActivity {
     private Button button2;
     private Button button3;
     int i = 0;
+    int j = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,19 +43,23 @@ public class specific2 extends AppCompatActivity {
                     button2.setBackgroundResource(R.drawable.thumbs_up);
                     i--;
                 }
+                button3.setBackgroundResource(R.drawable.thumbs_up);
+                j = 0;
             }
         });
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(i==0){
+                if(j==0){
                     button3.setBackgroundResource(R.drawable.dislike);
-                    i++;
-                }else if(i==1){
+                    j++;
+                }else if(j==1){
                     button3.setBackgroundResource(R.drawable.thumbs_up);
-                    i--;
+                    j--;
                 }
+                button2.setBackgroundResource(R.drawable.thumbs_up);
+                i = 0;
             }
         });
     }

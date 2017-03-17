@@ -10,13 +10,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import java.util.ArrayList;
 
 import java.util.Arrays;
 
 public class saved_rec extends AppCompatActivity {
     ListView lv;
     SearchView sv;
-    static String [] recipes = {"Garlic Chicken","Penne with Spring Vegetables","Curry Chicken"};
+    static ArrayList<String> recipe = new ArrayList<String>();;
+    //static String [] recipe = {"Garlic Chicken","Penne with Spring Vegetables","Curry Chicken"};
     static ArrayAdapter<String> adapter;
 
     @Override
@@ -26,8 +28,11 @@ public class saved_rec extends AppCompatActivity {
 
         lv = (ListView) findViewById(R.id.lv1);
         sv = (SearchView)findViewById(R.id.srch1);
-
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,recipes);
+        if(recipe.size()==0) {
+            recipe.add("Garlic Chicken");
+            recipe.add("Penne with Spring Vegetables");
+        }
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,recipe);
         lv.setAdapter(adapter);
         sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -113,5 +118,13 @@ public class saved_rec extends AppCompatActivity {
 
     }
         return(super.onOptionsItemSelected(item));
+    }
+
+    public static void add (String e){
+        recipe.add(e);
+    }
+
+    public static void rem (String e){
+        recipe.remove(e);
     }
 }

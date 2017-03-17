@@ -57,6 +57,22 @@
     <string name="weight">Weight</string>
     <string name="profile">Profile</string>
 
+    <string name="Add">+</string>
+    <string name="date1">2017/2/21</string>
+    <string name="date2">2017/2/22</string>
+    <string name="date3">2017/2/23</string>
+    <string name="date4">2017/2/24</string>
+    <string name="date5">2017/2/25</string>
+    <string name="date6">2017/2/26</string>
+    <string name="date7">2017/2/27</string>
+
+    <string name="from">From Alan Cooper</string>
+    <string name="subject">Subject: what would you like for dinner?</string>
+    <string name="Garlic">Garlic Chicken</string>
+    <string name="Penne">Penne Chicken with Spring Vegetables</string>
+    <string name="Curry">Curry Chicken</string>
+    <string name="submit">Submit</string>
+
 
     <string name="follow">Experiencing problems with th app? You may find these FAQs pretty useful. Just follow the link below</string>
     <string name="site">http://www.recipefinder.com/FAQs/</string>

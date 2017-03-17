@@ -5,13 +5,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioGroup;
 
 public class group extends AppCompatActivity {
+
+    //static RadioGroup rg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group);
+
+        Button btn1 =(Button)findViewById(R.id.submit);
+
+        btn1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //rg.clearCheck();
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
