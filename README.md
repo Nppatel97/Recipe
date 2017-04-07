@@ -41,7 +41,6 @@ Things to take notice of when using this prototype
 * While this prototype includes the names of many recipes. We only have have 4 specific recipes that we coded pages for.
 * When searching for recipes, choose any for ethnicity and any for difficulty. For calories put 500, for price and time put 50. When the results are displayed, sort them from A to Z (A-Z button). Only the first two buttons are programmed. This is to insure that you get taken to the right recipe. You can search for other recipes based on ethnicity, time or any other factors. And all of the sorting options work as well. 
 * Like and dislike buttons which add a recipe or remove it from your saved recipes only work for the chicken curry recipe. We didn’t code every like and dislike button for the other recipes.
-* When using the search function in the saved recipes page,to make sure that clicking the recipe will take you that recipes’ page, use the list when it is not filtered by the search. As the search bar will filter the recipes list, changing their position, which may take you to a wrong recipe.
 * In the health tracker page, the graphs are not render in real time. Also the only options from the drop menu that will have a graph displayed are protein intake, sodium intake, Vitamin A intake, and fats intake. 
 
 

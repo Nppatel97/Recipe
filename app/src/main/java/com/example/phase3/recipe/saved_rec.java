@@ -51,19 +51,20 @@ public class saved_rec extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch(position){
-                    case 0:
-                        Intent first_pick = new Intent(saved_rec.this,specific1.class);
-                        startActivity(first_pick);
-                        break;
-                    case 1:
-                        Intent sec_pick = new Intent(saved_rec.this,specific2.class);
-                        startActivity(sec_pick);
-                        break;
-                    case 2:
-                        Intent third_pick = new Intent(saved_rec.this,curry.class);
-                        startActivity(third_pick);
-                        break;
+               String openClass = adapter.getItem(position);
+                if(openClass.equals("Curry Chicken")){
+                    Intent third_pick = new Intent(saved_rec.this,curry.class);
+                    startActivity(third_pick);
+                }
+
+                if(openClass.equals("Garlic Chicken")){
+                    Intent third_pick = new Intent(saved_rec.this,specific1.class);
+                    startActivity(third_pick);
+                }
+
+                if(openClass.equals("Penne with Spring Vegetables")){
+                    Intent third_pick = new Intent(saved_rec.this,specific2.class);
+                    startActivity(third_pick);
                 }
             }
         });
