@@ -20,14 +20,17 @@
             android:id="@+id/from"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/from"
-            android:textSize="18sp" />
+            android:fontFamily="casual"
+            android:text="Time to Vote!"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <FrameLayout
             android:id="@+id/frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/layout_border"
             android:minHeight="300dp">
 
             <LinearLayout
@@ -45,17 +48,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="@string/subject"
+                        android:fontFamily="casual"
+                        android:text="Alan Cooper says: What would you like for dinner?"
                         android:textAlignment="center"
-                        android:textSize="18sp" />
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                 </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:id="@+id/imageButton"
@@ -85,32 +91,44 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/Garlic" />
+                        android:fontFamily="casual"
+                        android:text="@string/Garlic"
+                        android:textStyle="bold" />
 
                     <RadioButton
                         android:id="@+id/radioButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/Penne" />
+                        android:fontFamily="casual"
+                        android:text="@string/Penne"
+                        android:textStyle="bold" />
 
                     <RadioButton
                         android:id="@+id/radioButton3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/Curry" />
+                        android:fontFamily="casual"
+                        android:text="@string/Curry"
+                        android:textStyle="bold" />
 
                 </RadioGroup>
 
                 <Button
-                    android:id="@+id/submit"
+                    android:id="@+id/Vote"
                     android:layout_width="121dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200dp"
-                    android:layout_marginTop="60dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/submit" />
+                    android:layout_marginTop="60dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="casual"
+                    android:text="Vote"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </FrameLayout>

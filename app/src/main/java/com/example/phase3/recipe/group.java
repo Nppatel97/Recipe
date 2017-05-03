@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class group extends AppCompatActivity {
 
@@ -18,11 +19,13 @@ public class group extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group);
 
-        Button btn1 =(Button)findViewById(R.id.submit);
+        Button btn1 =(Button)findViewById(R.id.Vote);
 
         btn1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //rg.clearCheck();
+                Toast.makeText(getApplicationContext(), "Your Vote's now included! Soon you'll know what's for dinner", Toast.LENGTH_LONG).show();
+
             }
         });
     }
