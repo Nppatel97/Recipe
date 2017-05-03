@@ -3,7 +3,7 @@ Recipe Provider Android Application Prototype
 
 Small Note
 -----------
-This was a group project in a Software Engineering course. The entire app has 4 contributors. The latest changes with the commit message "Modified to my style", is my work in the design part that I did after the completion of the course. 
+This was a group project in a Software Engineering course. The entire app has 4 contributors, but the latest changes with the commit message "Modified to my style", which is a major change in terms of the overall app design, is my work in the design part that I did after the completion of the course in my free time in order to explore and learn the Android Studio and Android Development. 
 
 How to get the code?
 -----------
