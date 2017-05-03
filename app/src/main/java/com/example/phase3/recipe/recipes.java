@@ -18,6 +18,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import static com.example.phase3.recipe.R.id.difficultytext;
 import static com.example.phase3.recipe.R.id.ethnicitytext;
@@ -47,12 +48,12 @@ public class recipes extends AppCompatActivity {
         timevaltxt = (EditText) findViewById(R.id.timevaltxt);
 
         ethnicitydrop = (Spinner)findViewById(ethnicitytext);
-        String[] items1 = new String[]{"Asian", "North American", "South American", "European", "Any"};
+        String[] items1 = new String[]{"Any", "Asian", "North American", "South American", "European"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items1);
         ethnicitydrop.setAdapter(adapter);
 
         difficultydrop = (Spinner)findViewById(difficultytext);
-        String[] items2 = new String[]{"Easy", "Medium", "Hard", "Any"};
+        String[] items2 = new String[]{"Any", "Easy", "Medium", "Hard"};
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items2);
         difficultydrop.setAdapter(adapter2);
 
@@ -76,6 +77,10 @@ public class recipes extends AppCompatActivity {
 
                     Intent press = new Intent(recipes.this, display.class);
                     startActivity(press);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Please fill out all the information", Toast.LENGTH_LONG).show();
+
                 }
             }
         });

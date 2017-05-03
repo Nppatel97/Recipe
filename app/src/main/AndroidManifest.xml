@@ -8,47 +8,71 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".start">
+
+        <activity android:name=".start"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Create" />
+
+        <activity android:name=".Create"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
         <activity
             android:name=".user_prof"
             android:label="@string/userProf" />
+
         <activity
             android:name=".recipes"
             android:label="@string/rec" />
+
         <activity
             android:name=".saved_rec"
             android:label="@string/saved" />
+
         <activity
             android:name=".seven_plan"
             android:label="@string/plan" />
+
         <activity
             android:name=".track"
             android:label="@string/track" />
+
         <activity
             android:name=".group"
             android:label="@string/Group" />
+
         <activity
             android:name=".help"
             android:label="@string/Help" />
+
         <activity android:name=".logout" />
+
         <activity
             android:name=".specific1"
-            android:label="Recipe" />
+            android:label="@string/sel_rec" />
+
         <activity android:name=".specific2" />
-        <activity android:name=".forgot" />
-        <activity android:name=".display" />
-        <activity android:name=".blt" />
-        <activity android:name=".curry"></activity>
+
+        <activity android:name=".forgot"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
+        <activity android:name=".display"
+            android:label="@string/rec" />
+
+        <activity android:name=".blt"
+            android:label="@string/sel_rec"/>
+
+        <activity android:name=".curry"
+            android:label="@string/sel_rec" />
+
     </application>
 
 </manifest>

@@ -14,7 +14,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,8 +28,7 @@
                 android:id="@+id/Day1"
                 android:layout_width="match_parent"
                 android:minHeight="200dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:layout_height="wrap_content">
 
 
                 <RelativeLayout
@@ -36,11 +38,11 @@
 
                     <FrameLayout
                         android:id="@+id/inner_panel1"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="12dp"
                         android:visibility="invisible"
-                        android:layout_below="@+id/date1"
+                        android:layout_below="@+id/addnew1"
                         android:layout_centerHorizontal="true">
 
                         <LinearLayout
@@ -50,16 +52,15 @@
 
                             <Spinner
                                 android:id="@+id/day1recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1" />
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -69,28 +70,37 @@
                         android:id="@+id/date1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date1" />
+                        android:fontFamily="casual"
+                        android:text="@string/date1"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp"
-                        android:text="@string/Add" />
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/date1"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/Day2"
                 android:layout_width="match_parent"
-                android:minHeight="200dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:minHeight="200dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -99,12 +109,12 @@
 
                     <FrameLayout
                         android:id="@+id/inner_panel2"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
                         android:visibility="invisible"
                         android:layout_below="@+id/date2"
-                        android:layout_centerHorizontal="true">
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="63dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -113,16 +123,16 @@
 
                             <Spinner
                                 android:id="@+id/day2recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -132,39 +142,48 @@
                         android:id="@+id/date2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date2" />
+                        android:fontFamily="casual"
+                        android:text="@string/date2"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp"
-                        android:text="@string/Add" />
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/date2"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/Day3"
                 android:layout_width="match_parent"
-                android:minHeight="200dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:minHeight="200dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:minHeight="200dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:minHeight="200dp">
 
                     <FrameLayout
                         android:id="@+id/inner_panel3"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="62dp"
                         android:visibility="invisible"
                         android:layout_below="@+id/date3"
                         android:layout_centerHorizontal="true">
@@ -176,16 +195,16 @@
 
                             <Spinner
                                 android:id="@+id/day3recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -195,41 +214,50 @@
                         android:id="@+id/date3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date3" />
+                        android:fontFamily="casual"
+                        android:text="@string/date3"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Add"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp" />
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/date3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
                 </RelativeLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/Day4"
                 android:layout_width="match_parent"
-                android:minHeight="200dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:minHeight="200dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:minHeight="200dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:minHeight="200dp">
 
                     <FrameLayout
                         android:id="@+id/inner_panel4"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="65dp"
                         android:visibility="invisible"
-                        android:layout_below="@+id/date4"
+                        android:layout_alignTop="@+id/addnew4"
                         android:layout_centerHorizontal="true">
 
                         <LinearLayout
@@ -239,16 +267,16 @@
 
                             <Spinner
                                 android:id="@+id/day4recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -258,41 +286,50 @@
                         android:id="@+id/date4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date4" />
+                        android:fontFamily="casual"
+                        android:text="@string/date4"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Add"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp" />
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/date4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
                 </RelativeLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/Day5"
                 android:layout_width="match_parent"
-                android:minHeight="200dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:minHeight="200dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:minHeight="200dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:minHeight="200dp">
 
                     <FrameLayout
                         android:id="@+id/inner_panel5"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="63dp"
                         android:visibility="invisible"
-                        android:layout_below="@+id/date5"
+                        android:layout_alignTop="@+id/addnew5"
                         android:layout_centerHorizontal="true">
 
                         <LinearLayout
@@ -302,16 +339,16 @@
 
                             <Spinner
                                 android:id="@+id/day5recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -321,41 +358,50 @@
                         android:id="@+id/date5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date5" />
+                        android:fontFamily="casual"
+                        android:text="@string/date5"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Add"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp" />
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/date5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
                 </RelativeLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/Day6"
                 android:layout_width="match_parent"
-                android:minHeight="200dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:minHeight="200dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:minHeight="200dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:minHeight="200dp">
 
                     <FrameLayout
                         android:id="@+id/inner_panel6"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="67dp"
                         android:visibility="invisible"
-                        android:layout_below="@+id/date6"
+                        android:layout_alignTop="@+id/addnew6"
                         android:layout_centerHorizontal="true">
 
                         <LinearLayout
@@ -365,16 +411,16 @@
 
                             <Spinner
                                 android:id="@+id/day6recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -384,41 +430,50 @@
                         android:id="@+id/date6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date6" />
+                        android:fontFamily="casual"
+                        android:text="@string/date6"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp"
-                        android:text="@string/Add" />
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/date6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
                 </RelativeLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/Day7"
                 android:layout_width="match_parent"
-                android:minHeight="200dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:minHeight="200dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:minHeight="200dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:minHeight="200dp">
 
                     <FrameLayout
                         android:id="@+id/inner_panel7"
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_width="225dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="64dp"
                         android:visibility="invisible"
-                        android:layout_below="@+id/date7"
+                        android:layout_alignTop="@+id/addnew7"
                         android:layout_centerHorizontal="true">
 
                         <LinearLayout
@@ -428,16 +483,16 @@
 
                             <Spinner
                                 android:id="@+id/day7recipe"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1" />
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/delete7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/ic_delete" />
+                                app:srcCompat="@drawable/close" />
 
                         </LinearLayout>
 
@@ -447,19 +502,29 @@
                         android:id="@+id/date7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/date7" />
+                        android:fontFamily="casual"
+                        android:text="@string/date7"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/addnew7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Add"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="30dp" />
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/date7"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="casual"
+                        android:text="Add New Meal"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </FrameLayout>
         </LinearLayout>

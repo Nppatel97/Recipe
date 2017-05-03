@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.example.phase3.recipe.R.id.activity_create;
 
@@ -43,7 +44,6 @@ public class start extends AppCompatActivity {
         email_add = (EditText) findViewById(R.id.email_add);
         pass_word = (EditText) findViewById(R.id.pass_word);
         bt_singIn = (Button) findViewById(R.id.bt_signIn);
-        tv_Error = (TextView) findViewById(R.id.tv_Error);
 
 
         bt_singIn.setOnClickListener(new OnClickListener() {
@@ -56,7 +56,7 @@ public class start extends AppCompatActivity {
                     Intent intent1 = new Intent(start.this, user_prof.class);
                     startActivity(intent1);
                 }else{
-                    tv_Error.setText("Incorrect email or password");
+                    Toast.makeText(getApplicationContext(), "Incorrect Sign-In info. Please try again", Toast.LENGTH_LONG).show();
                 }
             }
         });

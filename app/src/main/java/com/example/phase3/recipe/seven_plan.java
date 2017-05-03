@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
 
@@ -76,13 +77,13 @@ public class seven_plan extends AppCompatActivity {
         ArrayAdapter<String> adapter7 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items1);
         recipespinner7.setAdapter(adapter7);
 
-        ImageButton del1 = (ImageButton)findViewById(R.id.delete1);
-        ImageButton del2 = (ImageButton)findViewById(R.id.delete2);
-        ImageButton del3 = (ImageButton)findViewById(R.id.delete3);
-        ImageButton del4 = (ImageButton)findViewById(R.id.delete4);
-        ImageButton del5 = (ImageButton)findViewById(R.id.delete5);
-        ImageButton del6 = (ImageButton)findViewById(R.id.delete6);
-        ImageButton del7 = (ImageButton)findViewById(R.id.delete7);
+        ImageView del1 = (ImageView)findViewById(R.id.delete1);
+        ImageView del2 = (ImageView) findViewById(R.id.delete2);
+        ImageView del3 = (ImageView) findViewById(R.id.delete3);
+        ImageView del4 = (ImageView) findViewById(R.id.delete4);
+        ImageView del5 = (ImageView) findViewById(R.id.delete5);
+        ImageView del6 = (ImageView) findViewById(R.id.delete6);
+        ImageView del7 = (ImageView) findViewById(R.id.delete7);
 
         final FrameLayout fl1 = (FrameLayout) findViewById(R.id.inner_panel1);
         final FrameLayout fl2 = (FrameLayout) findViewById(R.id.inner_panel2);

@@ -11,113 +11,126 @@
     tools:context="com.example.phase3.recipe.Create">
 
     <TextView
-        android:text="@string/create_account"
+        android:id="@+id/create_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="31dp"
-        android:id="@+id/create_header"
-        android:textSize="30sp" />
+        android:fontFamily="casual"
+        android:text="@string/create_account"
+        android:textAppearance="@style/TextAppearance.Design.Counter"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:text="@string/create_email"
+        android:id="@+id/email_prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:id="@+id/email_prompt"
-        android:layout_below="@+id/create_header"
         android:layout_alignLeft="@+id/create_header"
-        android:layout_alignStart="@+id/create_header" />
+        android:layout_alignStart="@+id/create_header"
+        android:layout_below="@+id/create_header"
+        android:layout_marginTop="39dp"
+        android:fontFamily="casual"
+        android:text="@string/create_email" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
+        android:id="@+id/enter_email"
         android:layout_below="@+id/email_prompt"
         android:layout_alignLeft="@+id/email_prompt"
         android:layout_alignStart="@+id/email_prompt"
-        android:layout_marginTop="11dp"
-        android:id="@+id/enter_email" />
+        android:layout_alignRight="@+id/create_header"
+        android:layout_alignEnd="@+id/create_header" />
 
     <TextView
-        android:text="@string/create_pass"
+        android:id="@+id/pass_prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pass_prompt"
-        android:layout_below="@+id/enter_email"
         android:layout_alignLeft="@+id/enter_email"
         android:layout_alignStart="@+id/enter_email"
-        android:layout_marginTop="12dp" />
+        android:layout_below="@+id/enter_email"
+        android:layout_marginTop="12dp"
+        android:fontFamily="casual"
+        android:text="@string/create_pass" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
+        android:id="@+id/enter_pass"
         android:layout_below="@+id/pass_prompt"
         android:layout_alignLeft="@+id/pass_prompt"
         android:layout_alignStart="@+id/pass_prompt"
-        android:layout_marginTop="11dp"
-        android:id="@+id/enter_pass" />
+        android:layout_alignRight="@+id/enter_email"
+        android:layout_alignEnd="@+id/enter_email" />
 
     <TextView
-        android:text="@string/re_pass"
+        android:id="@+id/pass_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:id="@+id/pass_check"
-        android:layout_below="@+id/enter_pass"
         android:layout_alignLeft="@+id/enter_pass"
-        android:layout_alignStart="@+id/enter_pass" />
+        android:layout_alignStart="@+id/enter_pass"
+        android:layout_below="@+id/enter_pass"
+        android:layout_marginTop="13dp"
+        android:fontFamily="casual"
+        android:text="@string/re_pass" />
 
     <EditText
+        android:id="@+id/check_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/check_pass"
-        android:layout_below="@+id/pass_check"
+        android:layout_alignEnd="@+id/enter_pass"
         android:layout_alignLeft="@+id/pass_check"
+        android:layout_alignRight="@+id/enter_pass"
         android:layout_alignStart="@+id/pass_check"
-        android:layout_marginTop="12dp" />
+        android:layout_below="@+id/pass_check"
+        android:ems="10"
+        android:inputType="textPassword" />
 
     <TextView
-        android:text="@string/have_account"
+        android:id="@+id/user_exists"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:id="@+id/user_exists"
+        android:fontFamily="casual"
+        android:text="@string/have_account"
         android:layout_below="@+id/bt_reg"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
 
     <Button
-        android:text="@string/Sign_In"
+        android:id="@+id/bt_return_start"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="70dp"
         android:layout_height="40dp"
-        android:id="@+id/bt_return_start"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:fontFamily="casual"
+        android:text="@string/Sign_In"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
         android:textSize="12sp"
+        android:textStyle="bold"
         android:layout_below="@+id/user_exists"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="@string/reg"
+        android:id="@+id/bt_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:id="@+id/bt_reg"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="casual"
+        android:text="@string/reg"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
         android:layout_below="@+id/check_pass"
         android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/check_pass"
-        android:layout_alignLeft="@+id/check_pass"
-        android:layout_alignStart="@+id/check_pass"
-        android:layout_marginTop="10dp"
-        android:id="@+id/create_success" />
 
 </RelativeLayout>

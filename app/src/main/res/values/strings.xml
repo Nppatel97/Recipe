@@ -6,7 +6,7 @@
     <string name="pass">password</string>
     <string name="forgot">Forgot Password?</string>
     <string name="incorrect">Incorrect email or password</string>
-    <string name="create_email">Email-address:</string>
+    <string name="create_email">Email</string>
     <string name="create_pass">Password</string>
     <string name="re_pass">Re-enter password</string>
     <string name="reg">Register</string>
@@ -47,11 +47,11 @@
     <string name="alan_cooper">Alan Cooper</string>
     <string name="birthdate">Birthdate</string>
     <string name="dietry_restrictions">Dietary Restrictions</string>
-    <string name="eggs">Eggs</string>
+    <string name="eggs">No Eggs</string>
     <string name="gender">Gender</string>
     <string name="height">Height</string>
-    <string name="milk">Milk</string>
-    <string name="peanuts">Peanuts</string>
+    <string name="milk">No Milk</string>
+    <string name="peanuts">No Peanuts</string>
     <string name="serves">Serves</string>
     <string name="vegan">Vegan</string>
     <string name="weight">Weight</string>
@@ -89,18 +89,28 @@
     <string name="difficulty">Difficulty</string>
     <string name="dollar">$</string>
     <string name="ethnicity">Ethnicity</string>
-    <string name="calories">Calories</string>
+    <string name="calories">Max Calories</string>
     <string name="a_z">A-Z</string>
+    <string name="sel_rec">Selected Recipe</string>
     <string-array name="serves_list">
         <item>1 Person</item>
         <item>2 to 4 People</item>
         <item>5 to 8 People</item>
         <item>8 or more People</item>
     </string-array>
+
+    <string-array name="ethni_list">
+        <item>Asian</item>
+        <item>American</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Mexican</item>
+        <item>Chinese</item>
+    </string-array>
+
     <string-array name="gender_list">
         <item>Male</item>
         <item>Female</item>
-        <item>Rather not say</item>
     </string-array>
 
     <string-array name="nutrients">

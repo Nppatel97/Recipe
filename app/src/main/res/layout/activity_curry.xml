@@ -21,29 +21,44 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="15dp"
                 android:layout_marginTop="18dp"
+                android:fontFamily="casual"
                 android:text="Curry Chicken"
-                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView10"
-                android:layout_marginTop="12dp"
-                app:srcCompat="@drawable/curry"
-                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/curry1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView10"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/curry"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
 
                 <RatingBar
                     android:id="@+id/ratingBar"
@@ -67,7 +82,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignTop="@+id/ratingBar"
                     android:layout_gravity="end"
-                    android:layout_marginLeft="95dp"
+                    android:layout_marginLeft="75dp"
                     android:layout_weight="0.00"
                     android:background="@drawable/thumbs_up" />
 
@@ -87,31 +102,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignEnd="@+id/textView10"
-                    android:layout_alignRight="@+id/textView10"
-                    android:layout_below="@+id/ratingBar"
-                    android:layout_weight="1"
-                    android:text="Ingredients"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                android:layout_weight="0.00"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/textView11"
+                    android:layout_marginLeft="15dp"
                     android:layout_toEndOf="@+id/ratingBar"
                     android:layout_toRightOf="@+id/ratingBar"
                     android:layout_weight="1"
+                    android:fontFamily="casual"
                     android:text="Serves: "
-                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_green_light"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -126,12 +132,37 @@
                     android:layout_toRightOf="@+id/textView12"
                     android:layout_weight="1"
                     android:entries="@array/serves_list" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@+id/textView10"
+                    android:layout_alignRight="@+id/textView10"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="Ingredients"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -147,7 +178,9 @@
                         android:layout_alignStart="@+id/checkBox8"
                         android:layout_below="@+id/checkBox8"
                         android:layout_weight="1"
-                        android:text="1/8 cup of butter" />
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="1/8 cup of butter"
+                        android:textSize="18sp" />
 
                     <CheckBox
                         android:id="@+id/checkBox5"
@@ -157,7 +190,9 @@
                         android:layout_alignStart="@+id/ratingBar"
                         android:layout_below="@+id/textView11"
                         android:layout_weight="1"
-                        android:text="1/4 cup honey" />
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="1/4 cup honey"
+                        android:textSize="18sp" />
 
                     <CheckBox
                         android:id="@+id/checkBox8"
@@ -167,7 +202,9 @@
                         android:layout_alignStart="@+id/checkBox5"
                         android:layout_below="@+id/checkBox5"
                         android:layout_weight="1"
-                        android:text="1 tsp curry powder" />
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="1 tsp curry powder"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -183,7 +220,9 @@
                         android:layout_alignLeft="@+id/checkBox6"
                         android:layout_alignStart="@+id/checkBox6"
                         android:layout_below="@+id/checkBox6"
-                        android:text="1⁄8 cup Dijon mustard" />
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="1⁄8 cup Dijon mustard"
+                        android:textSize="18sp" />
 
                     <CheckBox
                         android:id="@+id/checkBox6"
@@ -192,7 +231,9 @@
                         android:layout_above="@+id/checkBox8"
                         android:layout_alignLeft="@+id/textView12"
                         android:layout_alignStart="@+id/textView12"
-                        android:text="2-3 bonless skinless chicken breasts" />
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="2-3 bonless skinless chicken breasts"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -204,9 +245,11 @@
                 android:layout_alignLeft="@+id/checkBox7"
                 android:layout_alignStart="@+id/checkBox7"
                 android:layout_below="@+id/checkBox7"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="casual"
                 android:text="Directions"
+                android:textColor="@android:color/holo_green_light"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -217,8 +260,9 @@
                 android:layout_alignLeft="@+id/textView17"
                 android:layout_alignStart="@+id/textView17"
                 android:layout_below="@+id/textView17"
-                android:text="Cooks in 50 minutes"
                 android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Cooks in 50 minutes"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -230,6 +274,8 @@
                 android:layout_alignRight="@+id/checkBox9"
                 android:layout_below="@+id/textView18"
                 android:layout_marginTop="11dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Preheat oven to 350."
                 android:textSize="18sp" />
 
@@ -241,6 +287,8 @@
                 android:layout_alignStart="@+id/checkBox10"
                 android:layout_below="@+id/checkBox10"
                 android:layout_marginTop="13dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Heat butter, honey, dijon mustard, and curry together in a pan. "
                 android:textSize="18sp" />
 
@@ -254,6 +302,8 @@
                 android:layout_alignStart="@+id/checkBox11"
                 android:layout_below="@+id/checkBox11"
                 android:layout_marginTop="17dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Place chicken in a dish and pour sauce over chicken."
                 android:textSize="18sp" />
 
@@ -267,6 +317,8 @@
                 android:layout_alignStart="@+id/checkBox11"
                 android:layout_below="@+id/checkBox11"
                 android:layout_marginTop="17dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Bake for 50-55 mins."
                 android:textSize="18sp" />
 
@@ -278,9 +330,11 @@
                 android:layout_alignLeft="@+id/textView11"
                 android:layout_alignStart="@+id/textView11"
                 android:layout_below="@+id/checkBox12"
-                android:layout_marginTop="18dp"
-                android:text="Nutritional Info"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="casual"
+                android:text="Nutritional Info"
+                android:textColor="@android:color/holo_green_light"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -291,9 +345,9 @@
                 android:layout_alignLeft="@+id/checkBox12"
                 android:layout_alignStart="@+id/checkBox12"
                 android:layout_below="@+id/textView27"
-                android:layout_marginTop="13dp"
-                android:text="Total Calories: 770 kcal"
                 android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Total Calories: 770 kcal"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -305,7 +359,7 @@
                 android:layout_alignStart="@+id/textView30"
                 android:layout_below="@+id/textView30"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Sodium: 836 mg"
                 android:textSize="18sp" />
 
@@ -319,7 +373,7 @@
                 android:layout_alignStart="@+id/textView33"
                 android:layout_below="@+id/textView33"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="11dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Protein: 52.8 g"
                 android:textSize="18sp" />
 
@@ -331,7 +385,7 @@
                 android:layout_alignStart="@+id/textView32"
                 android:layout_below="@+id/textView32"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Fat: 31.2 g"
                 android:textSize="18sp" />
 
@@ -343,7 +397,7 @@
                 android:layout_alignStart="@+id/textView31"
                 android:layout_below="@+id/textView31"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Cholestrol: 212.2 mg"
                 android:textSize="18sp" />
 
@@ -357,7 +411,7 @@
                 android:layout_alignStart="@+id/textView28"
                 android:layout_below="@+id/textView28"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="11dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Carbs: 75.5 g"
                 android:textSize="18sp" />
 
@@ -368,11 +422,17 @@
                 android:layout_alignEnd="@+id/spinner3"
                 android:layout_alignRight="@+id/spinner3"
                 android:layout_below="@+id/textView29"
-                android:layout_marginRight="15dp"
                 android:layout_gravity="end"
+                android:layout_marginRight="15dp"
                 android:layout_marginTop="24dp"
-                android:text="Select"
-                android:textAlignment="center" />
+                android:background="@android:color/transparent"
+                android:fontFamily="casual"
+                android:text="Add to Tracker"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>

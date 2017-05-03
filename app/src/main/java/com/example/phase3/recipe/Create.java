@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static android.R.attr.data;
 
 public class Create extends AppCompatActivity {
     Button bt_return_start;
@@ -39,7 +42,6 @@ public class Create extends AppCompatActivity {
 
         enter_pass = (EditText) findViewById(R.id.enter_pass);
         check_pass = (EditText) findViewById(R.id.check_pass);
-        create_success = (TextView) findViewById(R.id.create_success);
 
         bt_reg.setOnClickListener(new OnClickListener() {
             @Override
@@ -48,9 +50,9 @@ public class Create extends AppCompatActivity {
                 String pass2 = String.valueOf(check_pass.getText());
 
                 if(pass1.equals(pass2)){
-                    create_success.setText("Account created, press sign in to log in");
+                    Toast.makeText(getApplicationContext(), "Account Successfully Created! Press Sign-In to continue", Toast.LENGTH_LONG).show();
                 }else{
-                    create_success.setText("Passwords do not match");
+                    Toast.makeText(getApplicationContext(), "Oops! Passwords don't match, please try again.", Toast.LENGTH_SHORT).show();
                 }
             }
         });

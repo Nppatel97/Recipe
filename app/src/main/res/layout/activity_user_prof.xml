@@ -15,11 +15,15 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/emailId"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/emailId"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/alan_cooper"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -29,191 +33,323 @@
         app:srcCompat="@drawable/profile_pic"
         tools:ignore="HardcodedText"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/emailId" />
 
     <TextView
         android:id="@+id/emailId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="Username"
-        android:text="alan@gmail.com"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/birthdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/birthdate"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/emailId"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/birthdate"
-        android:layout_alignStart="@+id/birthdate"
-        android:layout_below="@+id/birthdate"
-        android:layout_toStartOf="@+id/imageView2"
-        android:ems="10"
-        android:inputType=""
-        android:text="@string/_12_4_1991"
-        android:layout_toLeftOf="@+id/imageView2"
-        tools:ignore="TextFields" />
-
-    <TextView
-        android:id="@+id/gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/date"
-        android:layout_alignStart="@+id/date"
-        android:layout_below="@+id/date"
-        android:layout_marginTop="19dp"
-        android:text="@string/gender"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/date"
-        android:layout_alignLeft="@+id/gender"
-        android:layout_alignRight="@+id/date"
-        android:layout_alignStart="@+id/gender"
-        android:layout_below="@+id/gender"
-        android:entries="@array/gender_list" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner"
-        android:layout_alignStart="@+id/spinner"
-        android:layout_below="@+id/spinner"
-        android:layout_marginTop="21dp"
-        android:text="@string/height"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/_172_cm"
-        android:layout_below="@+id/textView13"
-        android:layout_alignLeft="@+id/textView13"
-        android:layout_alignStart="@+id/textView13"
-        android:layout_alignRight="@+id/spinner"
-        android:layout_alignEnd="@+id/spinner" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView13"
-        android:layout_alignStart="@+id/textView13"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="19dp"
-        android:text="@string/weight"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/_67_kg"
-        android:layout_below="@+id/textView14"
-        android:layout_alignLeft="@+id/textView14"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/serves"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_above="@+id/date"
-        android:layout_alignRight="@+id/imageView2"
-        android:layout_alignEnd="@+id/imageView2" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView15"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/textView15"
-        android:layout_below="@+id/textView15"
-        android:entries="@array/serves_list" />
+        android:layout_below="@+id/name"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        android:contentDescription="Username"
+        android:fontFamily="sans-serif-condensed"
+        android:text="alan@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner2"
-        android:layout_alignStart="@+id/spinner2"
-        android:layout_below="@+id/date"
-        android:text="@string/dietry_restrictions"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_update"
+        android:layout_below="@+id/imageView2">
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView16"
-        android:layout_alignStart="@+id/textView16"
-        android:layout_below="@+id/textView16"
-        android:text="@string/peanuts"
-        android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/eggs"
-        android:textSize="18sp"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox2"
-        android:layout_alignStart="@+id/checkBox2"
-        android:layout_below="@+id/checkBox2"
-        android:text="@string/milk"
-        android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText2"
-        android:layout_alignLeft="@+id/checkBox3"
-        android:layout_alignStart="@+id/checkBox3"
-        android:text="@string/vegan"
-        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginTop="18dp"
+                        android:layout_weight="1"
+                        android:fontFamily="casual"
+                        android:text="@string/birthdate"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/birthdate"
+                        android:layout_alignStart="@+id/birthdate"
+                        android:layout_below="@+id/birthdate"
+                        android:layout_toLeftOf="@+id/imageView2"
+                        android:layout_toStartOf="@+id/imageView2"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:inputType=""
+                        android:text="@string/_12_4_1991"
+                        tools:ignore="TextFields" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/date"
+                        android:layout_alignStart="@+id/date"
+                        android:layout_below="@+id/date"
+                        android:layout_marginTop="19dp"
+                        android:layout_weight="1"
+                        android:fontFamily="casual"
+                        android:text="@string/gender"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/checkBox3"
+                        android:layout_alignEnd="@+id/date"
+                        android:layout_alignLeft="@+id/gender"
+                        android:layout_alignRight="@+id/date"
+                        android:layout_alignStart="@+id/gender"
+                        android:layout_below="@+id/gender"
+                        android:layout_weight="1"
+                        android:entries="@array/gender_list" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/spinner"
+                        android:layout_alignStart="@+id/spinner"
+                        android:layout_below="@+id/spinner"
+                        android:layout_marginTop="21dp"
+                        android:fontFamily="casual"
+                        android:text="@string/height"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/spinner"
+                        android:layout_alignLeft="@+id/textView13"
+                        android:layout_alignRight="@+id/spinner"
+                        android:layout_alignStart="@+id/textView13"
+                        android:layout_below="@+id/textView13"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:inputType="textPersonName"
+                        android:text="@string/_172_cm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView13"
+                        android:layout_alignStart="@+id/textView13"
+                        android:layout_below="@+id/editText2"
+                        android:layout_marginTop="19dp"
+                        android:fontFamily="casual"
+                        android:text="@string/weight"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/editText2"
+                        android:layout_alignLeft="@+id/textView14"
+                        android:layout_alignRight="@+id/editText2"
+                        android:layout_alignStart="@+id/textView14"
+                        android:layout_below="@+id/textView14"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:inputType="textPersonName"
+                        android:text="@string/_67_kg" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.23"
+                    android:fontFamily="casual"
+                    android:text="@string/serves"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_below="@+id/textView15"
+                    android:entries="@array/serves_list" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/spinner2"
+                android:layout_alignStart="@+id/spinner2"
+                android:layout_below="@+id/date"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="@string/dietry_restrictions"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editText2"
+                android:layout_alignLeft="@+id/checkBox3"
+                android:layout_alignStart="@+id/checkBox3"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/vegan"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox"
+                android:layout_alignStart="@+id/checkBox"
+                android:layout_below="@+id/checkBox"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/eggs"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox2"
+                android:layout_alignStart="@+id/checkBox2"
+                android:layout_below="@+id/checkBox2"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/milk"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView16"
+                android:layout_alignStart="@+id/textView16"
+                android:layout_below="@+id/textView16"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/peanuts"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox"
+                android:layout_alignStart="@+id/checkBox"
+                android:layout_below="@+id/checkBox"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Vegetarian Only"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox2"
+                android:layout_alignStart="@+id/checkBox2"
+                android:layout_below="@+id/checkBox2"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="More Wheat!"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView16"
+                android:layout_alignStart="@+id/textView16"
+                android:layout_below="@+id/textView16"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Eggiterian"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/bt_update"
@@ -222,7 +358,12 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="casual"
+        android:onClick="InfoUpdated"
         android:text="@string/update_info"
-        android:onClick="InfoUpdated"/>
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
 </RelativeLayout>
